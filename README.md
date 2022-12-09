@@ -2,5 +2,5 @@
 
 Matt Jacyk Personal Portfolio
 
-To view, visit https://jacykdev.com
+To view, visit https://www.jacykdev.com
 
