@@ -35,6 +35,8 @@
 }
 span{
   display: inline-block;
+  padding: 2%;
+  margin: 2%;
   
 }
 .App-img-profile {
@@ -75,6 +77,10 @@ span{
     display: block;
     float: left;
   
+  }
+  .App-skillset{
+    display: block;
+    justify-content: center;
   }
 
 }
