@@ -1,16 +1,11 @@
 .App {
   text-align: center;
+  background-color: #f3f3f3;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -23,6 +18,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.App-body{
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: normal;
+  font-size: calc(7px + 2vmin);
+  color: #282c34;
+
+}
 
 .App-link {
   color: #61dafb;
@@ -30,7 +35,26 @@
 }
 span{
   display: inline-block;
+  
 }
+.App-img-profile {
+  border-radius: 10%;
+  width: 35%;
+  height: 35%;
+  display: block;
+  float: left;
+  margin-right: 5%;
+
+}
+.App-h2-profile {
+  display: block;
+  justify-content: center;
+}
+.FA-clickable{
+--fa-animation-delay: 8s;
+
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -38,4 +62,53 @@ span{
   to {
     transform: rotate(360deg);
   }
+}
+@media(min-width: 1550px){
+  .App-body{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .App-img-profile {
+    width: 25%;
+    height: 25%;
+    display: block;
+    float: left;
+  
+  }
+
+}
+
+@media (min-width: 950px) and (max-width: 1550px){
+  .App-body{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .App-img-profile {
+    width: 25%;
+    height: 25%;
+    display: block;
+    float: left;
+  
+  }
+
+} 
+@media (min-width: 500px) and (max-width: 950px){
+  .App-body{
+    margin: 15px;
+    padding: 15px;
+  }
+  .App-img-profile{
+    margin-right: 10px;
+  }
+
+}
+@media (max-width: 500px) {
+  .App-body{
+    margin: 5px;
+    padding: 5px;
+  }
+
+
 }

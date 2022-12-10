@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f3f3f3;
 }
 
 code {
@@ -19,7 +20,7 @@ code {
   align-items: center;
   justify-content: center;
   font-size: calc(1px + 2vmin);
-  color: rgb(24, 24, 24);
+  color: #282c34;
 
 }
 .Index-logo {
