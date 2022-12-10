@@ -54,7 +54,7 @@ span{
 }
 .FA-clickable{
 --fa-animation-delay: 8s;
-
+--fa-animation-timing: ease-in;
 }
 
 @keyframes App-logo-spin {
