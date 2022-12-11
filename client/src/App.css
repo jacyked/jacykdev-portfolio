@@ -49,8 +49,13 @@ span{
 
 }
 .App-h2-profile {
-  display: block;
+  display: flex;
   justify-content: center;
+}
+.App-current{
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
 }
 .FA-clickable{
 --fa-animation-delay: 8s;
