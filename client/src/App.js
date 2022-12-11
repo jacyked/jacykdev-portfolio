@@ -1,6 +1,7 @@
 
 import './App.css';
 import './profile.jpg';
+import logo from './logo_transparent.png';
 import deployed1 from './deployed1.PNG';
 import deployed2 from './deployed2.PNG';
 import AnimatedHeader from './components/AnimatedHeader';
@@ -57,6 +58,12 @@ function App() {
         </div>
 
       </div>
+      <footer className="Index-footer">
+        <br />
+        <label>Built By </label>
+        <img className="Index-logo" src={logo}/>
+        <br />
+      </footer>
     </div>
   );
 }
