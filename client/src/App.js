@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <AnimatedHeader sequence={["Hello", 200, "Hello World!", 2000, "I'm Matt Jacyk, A Full Stack Developer."]} wrapper="h1" repeat='0'/>
+        <AnimatedHeader sequence={["Hello", 200, "Hello World!", 1500, "I'm Matt Jacyk, A Full Stack Developer."]} wrapper="h1" repeat='0'/>
         <span>
           <a className="App-link" href="https://github.com/jacyked"><FontAwesomeIcon className="FA-clickable" size="2xl" icon={faSquareGithub} bounce/></a>
           <a className="App-link" href="https://www.linkedin.com/in/matt-jacyk-a13a8216b/"><FontAwesomeIcon className="FA-clickable" size="2xl" icon={faLinkedin} bounce/></a>
@@ -25,8 +25,10 @@ function App() {
       <div className="App-body">
         <div className="App-aboutme">
           <img className="App-img-profile" src='./profile.jpg'/>
-          <h2 className='App-h2-profile'> About Me</h2>
-          <p className='App-h2-profile'> Hi! My name is Matt Jacyk; I am a proud father, amateur bodybuilder, and full stack developer. I enjoy challenging projects that require a technically creative approach.</p>
+          <div>
+            <h2 className='App-h2-profile'> About Me</h2>
+            <p className='App-h2-profile'> Hi! My name is Matt Jacyk; I am a proud father, amateur bodybuilder, and full stack developer. I enjoy challenging projects that require a technically creative approach.</p>
+          </div>
         </div>
         <h2>Currently Deployed</h2>
         <div className="App-current">

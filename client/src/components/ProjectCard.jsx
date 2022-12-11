@@ -5,7 +5,7 @@ import { faSquareGithub, faLinkedin, faSquareJs, faReact, faNode, faJava, faEnvi
 function ProjectCard(props) {
     return (
         
-            <div style={{display: 'block', width: '31%', minHeight: '50%',backgroundColor: '#ffffff', borderRadius: "20px", padding: '0.5%', margin: '1%'}}>
+            <div className='deployed-card' style={{display: 'block', minHeight: '50%',backgroundColor: '#ffffff', borderRadius: "20px", padding: '0.5%', margin: '1%'}}>
                 <span style={{display: 'block'}}>
                     <a href={props.url} ><img src={props.image} style={{border: 'solid 0.5px', borderRadius: '20px',margin: '2px', display: 'inline-block', float: 'left', width: '45%',}}/> </a>
                     <strong style={{margin: '5px', display: 'inline', verticalAlign: 'top'}}>{props.title}</strong>

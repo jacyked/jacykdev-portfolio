@@ -39,17 +39,25 @@ span{
   margin: 2%;
   
 }
+.App-aboutme{
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 .App-img-profile {
   border-radius: 10%;
   width: 35%;
   height: 35%;
   display: block;
-  float: left;
   margin-right: 5%;
+  margin-top: 2.5%;
+  
 
 }
 .App-h2-profile {
-  display: flex;
+  display: block;
   justify-content: center;
 }
 .App-current{
@@ -70,7 +78,7 @@ span{
     transform: rotate(360deg);
   }
 }
-@media(min-width: 1550px){
+@media(min-width: 1370px){
   .App-body{
     width: 80%;
     margin-left: auto;
@@ -87,10 +95,13 @@ span{
     display: block;
     justify-content: center;
   }
+  .deployed-card{
+    width: 40%;
+  }
 
 }
 
-@media (min-width: 950px) and (max-width: 1550px){
+@media (min-width: 950px) and (max-width: 1370px){
   .App-body{
     width: 85%;
     margin-left: auto;
@@ -104,6 +115,10 @@ span{
   
   }
 
+  .deployed-card{
+    width: 60%;
+  }
+
 } 
 @media (min-width: 500px) and (max-width: 950px){
   .App-body{
@@ -113,12 +128,33 @@ span{
   .App-img-profile{
     margin-right: 10px;
   }
+  .App-current{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: normal;
+  }
+  .deployed-card{
+    width: 75%;
+  }
 
 }
 @media (max-width: 500px) {
   .App-body{
     margin: 5px;
     padding: 5px;
+  }
+  .App-current{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: normal;
+  }
+  .deployed-card{
+    width: 75%;
+  }
+  .App-img-profile{
+    margin-top: 7.5%;
   }
 
 
