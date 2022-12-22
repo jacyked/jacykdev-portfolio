@@ -1,8 +1,10 @@
 
 import './App.css';
 import './profile.jpg';
+import logo from './logo_transparent.png';
 import deployed1 from './deployed1.PNG';
 import deployed2 from './deployed2.PNG';
+import deployed3 from './deployed3.PNG';
 import AnimatedHeader from './components/AnimatedHeader';
 import ProjectCard from './components/ProjectCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -30,13 +32,15 @@ function App() {
             <p className='App-h2-profile'> Hi! My name is Matt Jacyk; I am a proud father, amateur bodybuilder, and full stack developer. I enjoy challenging projects that require a technically creative approach.</p>
           </div>
         </div>
-        <h2>Currently Deployed</h2>
+        <h2>Current Projects </h2>
         <div className="App-current">
           <div style={{marginRight: '1%', marginLeft: '1%'}}>
           
           </div>
-          <ProjectCard image={deployed1} url="https://hopeemilyportfolio.netlify.app" title="Artist Portfolio" text="This site automatically pulls images from the artist's Google Drive, sorts them into categories, and displays them in dynamically built image carousels. It is a fully automated process; any images added/removed from the Google Drive are immediately reflected on the site."/>
-          <ProjectCard image={deployed2} url="https://nodex-capstone.netlify.app" title="Event Finder" text="Our SAIT Capstone project, this Event Finder utilizes a hand-crafted web scraper to compile events from multiple websites into one place. Users can view compiled events, book them on their source websites, or view/purchase tickets for locally hosted events. They can search for events by name, category, dates, or descriptions."/>
+          <ProjectCard imgURL={deployed1} link="https://hopeemilyportfolio.netlify.app" github="https://github.com/jacyked/ArtClient" title="Artist Portfolio" stack="Built with: Node.js, React.js, Express" sub="A dynamically updating art display site" details="This site automatically pulls images from the artist's Google Drive and displays them in dynamically built image carousels. It is a fully automated process; any images added/removed from the Google Drive are immediately reflected on the site. TThese images are also automatically sorted into corresponding categories for each display carousel, meaning all updates regarding images can be done directly by the artist from Google Drive, without needing to change any code."/>
+          <ProjectCard imgURL={deployed2} link="https://nodex-capstone.netlify.app" title="Nodex Event Finder" stack="Built with: Node.js, React.js, Express, MongoDB" sub="Centralized hub for finding events" details="Our SAIT Capstone project, this Event Finder utilizes a hand-crafted web scraper to compile events from multiple websites into one place. Users can view compiled events, book them on their source websites, or view/purchase tickets for locally hosted events. They can search for events by name, category, dates, or descriptions."/>
+          <ProjectCard imgURL={deployed3} title="Workout Tracker" link="https://github.com/jacyked/WorkoutTracker"  github="https://github.com/jacyked/WorkoutTracker" stack="Built with: Node.js, React.js, Express, MongoDB" sub="Progressive Web App for tracking workouts" details="This in development project aims to be a mobile-based web application for tracking workouts and exercises. It currently features a database of 3149 different exercises, each containing an overall rating of effectiveness, a description, which muscle groups it targets, required equipment, and more. It also features secure login/authentication, and also allows persistant login to users if they trust the device."/>
+          
 
 
         </div>
@@ -57,6 +61,12 @@ function App() {
         </div>
 
       </div>
+      <footer className="Index-footer">
+        <br />
+        <label>Built By </label>
+        <img className="Index-logo" src={logo}/>
+        <br />
+      </footer>
     </div>
   );
 }

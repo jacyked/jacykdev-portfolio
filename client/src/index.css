@@ -13,16 +13,3 @@ code {
     monospace;
 }
 
-.Index-footer {
-  background-color: #f3f3f3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(1px + 2vmin);
-  color: #282c34;
-
-}
-.Index-logo {
-  width: 10%;
-}

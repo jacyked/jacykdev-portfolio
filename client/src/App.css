@@ -65,6 +65,19 @@ span{
   justify-content: center;
   margin-top: 2%;
 }
+.Index-footer {
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1px + 2vmin);
+  color: #282c34;
+
+}
+.Index-logo {
+  width: 10%;
+}
 .FA-clickable{
 --fa-animation-delay: 8s;
 --fa-animation-timing: ease-in;
