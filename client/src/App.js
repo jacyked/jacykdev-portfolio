@@ -31,13 +31,13 @@ function App() {
             <p className='App-h2-profile'> Hi! My name is Matt Jacyk; I am a proud father, amateur bodybuilder, and full stack developer. I enjoy challenging projects that require a technically creative approach.</p>
           </div>
         </div>
-        <h2>Currently Deployed</h2>
+        <h2>Current Projects </h2>
         <div className="App-current">
           <div style={{marginRight: '1%', marginLeft: '1%'}}>
           
           </div>
-          <ProjectCard image={deployed1} url="https://hopeemilyportfolio.netlify.app" title="Artist Portfolio" text="This site automatically pulls images from the artist's Google Drive, sorts them into categories, and displays them in dynamically built image carousels. It is a fully automated process; any images added/removed from the Google Drive are immediately reflected on the site."/>
-          <ProjectCard image={deployed2} url="https://nodex-capstone.netlify.app" title="Event Finder" text="Our SAIT Capstone project, this Event Finder utilizes a hand-crafted web scraper to compile events from multiple websites into one place. Users can view compiled events, book them on their source websites, or view/purchase tickets for locally hosted events. They can search for events by name, category, dates, or descriptions."/>
+          <ProjectCard imgURL={deployed1} link="https://hopeemilyportfolio.netlify.app" github="https://github.com/jacyked/ArtClient" title="Artist Portfolio" stack="Built with: Node.js, React.js, Express" sub="A dynamically updating art display site" details="This site automatically pulls images from the artist's Google Drive, sorts them into categories, and displays them in dynamically built image carousels. It is a fully automated process; any images added/removed from the Google Drive are immediately reflected on the site."/>
+          <ProjectCard imgURL={deployed2} link="https://nodex-capstone.netlify.app" title="Nodex Event Finder" stack="Built with: Node.js, React.js, Express, MongoDB" sub="Centralized hub for finding events" details="Our SAIT Capstone project, this Event Finder utilizes a hand-crafted web scraper to compile events from multiple websites into one place. Users can view compiled events, book them on their source websites, or view/purchase tickets for locally hosted events. They can search for events by name, category, dates, or descriptions."/>
 
 
         </div>
