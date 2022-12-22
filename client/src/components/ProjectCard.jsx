@@ -22,6 +22,7 @@ import Popover from '@mui/material/Popover';
 import { Button } from '@mui/material';
 import { textAlign } from '@mui/system';
 import { LinkConfirm } from './LinkConfirm'
+import Slide from '@mui/material/Slide';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -94,6 +95,7 @@ function ProjectCard(props) {
           <Popover 
             id={id}
             open={open}
+            
             anchorEl={anchorEl}
             onClose={handleClose}
             anchorOrigin={{
@@ -107,19 +109,15 @@ function ProjectCard(props) {
             >
                 <Typography sx={{ p: 2 }}>{props.details}</Typography>
             </Popover>
+            
         <Popover 
         onClose={refuse}
         open={isOpen.open}
-        anchorReference="anchorPosition"
-        anchorPosition={{ top: 350, left: 770 }}
-        anchorOrigin={{
-            vertical: 'center',
-            horizontal: 'center',
-        }}
-        transformOrigin={{
-            vertical: 'center',
-            horizontal: 'center',
-        }}
+        anchorReference={'none'}
+        sx={{display: 'flex',
+            justifySelf: 'center',
+            justifyContent: 'center', 
+            alignItems: 'center'}}
         >
             <Box sx={{display: 'flex', justifyContent: 'center', flexDirection: 'column', textAlign: 'center'}}>
             <Typography sx={{ p: 2 }}>You're about to leave this site and visit {isOpen.link}</Typography>
