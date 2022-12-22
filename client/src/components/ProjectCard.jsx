@@ -111,7 +111,7 @@ function ProjectCard(props) {
         onClose={refuse}
         open={isOpen.open}
         anchorReference="anchorPosition"
-        anchorPosition={{ top: 400, left: 950 }}
+        anchorPosition={{ top: 350, left: 770 }}
         anchorOrigin={{
             vertical: 'center',
             horizontal: 'center',
