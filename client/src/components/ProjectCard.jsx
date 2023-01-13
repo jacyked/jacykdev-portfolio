@@ -23,6 +23,11 @@ import { Button } from '@mui/material';
 import { textAlign } from '@mui/system';
 import { LinkConfirm } from './LinkConfirm'
 import Slide from '@mui/material/Slide';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -60,7 +65,7 @@ function ProjectCard(props) {
 
 
     return (
-        <Card sx={{ maxWidth: 500, m: 5,}}>
+        <Card sx={{ maxWidth: 500, m: 2,}}>
           <CardHeader
             title={props.title}
             subheader={props.stack}
@@ -110,21 +115,29 @@ function ProjectCard(props) {
                 <Typography sx={{ p: 2 }}>{props.details}</Typography>
             </Popover>
             
-        <Popover 
+        <Dialog 
         onClose={refuse}
         open={isOpen.open}
-        anchorReference={'none'}
-        sx={{display: 'flex',
-            justifySelf: 'center',
-            justifyContent: 'center', 
-            alignItems: 'center'}}
+        aria-labelledby="Leave Site?"
+        aria-describedby="Leave site confirmation"
         >
-            <Box sx={{display: 'flex', justifyContent: 'center', flexDirection: 'column', textAlign: 'center'}}>
-            <Typography sx={{ p: 2 }}>You're about to leave this site and visit {isOpen.link}</Typography>
-            <Typography sx={{ p: 2 }}>Would you like to continue? </Typography>
-            <span><Button onClick={refuse}>No</Button><Button onClick={() => {window.location=isOpen.link}}>Yes</Button></span>
-            </Box>
-        </Popover>
+          <DialogTitle id="alert-dialog-title">
+          {"Leave Site?"}
+          </DialogTitle>
+          <DialogContent>
+            <DialogContentText id="alert-dialog-description">
+              You're about to leave this site and visit {isOpen.link}
+              <br />
+              Would you like to continue? 
+            </DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={refuse} variant="filled">Back</Button>
+            <Button onClick={() => {window.location=isOpen.link}} autoFocus>
+              Continue
+            </Button>
+          </DialogActions>
+        </Dialog>
         </Card>
       );
     
