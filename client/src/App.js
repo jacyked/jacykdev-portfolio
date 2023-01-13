@@ -8,7 +8,7 @@ import deployed3 from './deployed3.PNG';
 import AnimatedHeader from './components/AnimatedHeader';
 import ProjectCard from './components/ProjectCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import ReactDOM from 'react-dom'
+
 import { faSquareGithub, faLinkedin, faSquareJs, faReact, faNode, faJava, faEnvira} from '@fortawesome/free-brands-svg-icons'
 import { faCode, faDatabase} from '@fortawesome/free-solid-svg-icons'
 
